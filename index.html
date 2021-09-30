@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.cuadro1{
+position: absolute;
+right: 70%;
+width: 20%;
+height: 50%;
+border-style: solid;
+border-radius: 10px;
+top:10%;
+background:#20948b;
+font-size:150%;
+color:white;
+text-align: center;
+}	
+
+.cuadr1{
+position: absolute;
+right: 72%;
+width: 15%;
+height: 10%;
+border-style: solid;
+border-radius: 10px;
+top:30%;
+background: orange;
+}	
+
+.cuadr2{
+position: absolute;
+right: 72%;
+width: 15%;
+height: 10%;
+border-style: solid;
+border-radius: 10px;
+top:45%;
+background: orange;
+}	
+.cuadr3{
+position: absolute;
+right: 72%;
+width: 15%;
+height: 10%;
+border-style: solid;
+border-radius: 10px;
+top:15%;
+background: orange;
+font-size:150%;
+
+text-align: center;
+}	
+.cuadro2{
+position: absolute;
+right: 20%;
+width: 40%;
+padding-top: 20px;
+padding-left: : 20px;
+padding-bottom: : 20px;
+border-style: solid;
+border-radius: 10px;
+top:10%;
+background:#20948b;
+font-size:150%;
+color:white;
+text-align: center;
+
+}	
+
+</style>
+
+
+	<title></title>
+</head>
+<body>
+
+<div class="cuadro1">INGRESAR</div>
+<div class="cuadr1" ><input placeholder="INGRESE EL NOMBRE"  id="ff2"></div>
+<div class="cuadr2" ><input placeholder="INGRESE EL PRECIO" id="ff4"></div>
+<div class="cuadr3" onclick="llenar()"  >INSERTAR</div>
+	<div class="cuadro2" id="ff3">MENU</div>
+<script>
+	
+function llenar()
+{
+
+nuevot="<div class='csdad'>" + ff2.value + "  " + "$" + ff4.value + "</div>";
+conte=ff3.innerHTML; 
+conte=conte+nuevot;
+ff3.innerHTML=conte;
+
+
+
+}
+
+</script>
+
+</body>
+</html>
